@@ -1,38 +1,404 @@
-.App {
-  text-align: center;
+nav {
+  background: black;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link {
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #f6f6f6;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.products {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  background-color: black;
+
+}
+
+.product-card {
+
+  padding: 2%;
+
+  flex-grow: 1;
+
+  flex-basis: 16%;
+
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+
+body {
+
+  background-color: #f6f6f6;
+
+}
+
+
+
+.cont {
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+.back {
+
+  background-color: #f4eddd; 
+
+  padding: 20px;
+
+  margin-left: 20px;
+
+  margin-right: 20px;
+
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+
+
+}
+
+.change {
+
+  background-color: black;
+
+  color: white;
+
+  padding: 10px;
+
+  border: none;
+
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+
+}
+
+h3, h4 {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  color: #f6f6f6;
+}
+
+button {
+  font-size: 15px;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+
+  max-width: 1200px;
+
+  margin: 0px auto;
+
+  padding: 0px 10px;
+}
+
+p, li {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  color: #000;
+  font-size: 18px;
+}
+
+li {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  color: #000;
+  font-size:15px;
+}
+
+.his {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  color: #000;
+  font-size: 20px;
+}
+
+.btn {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  border: none;
+}
+
+span {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  color: #1F4690;
+  font-size: 25px;
+}
+
+.important {
+  background-color: #A5C9CA;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  max-width:fit-content;
+}
+
+.box {
+  background-color: #f6f6f6;
+}
+
+.btnColor {
+  font-size: 15px;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #f6f6f6;
+  padding: 10px;
+}
+
+.red {
+  color: #EB4747;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.white {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.yellow {
+  color: #E6B325;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.green {
+  color:#377D71 ;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.blue {
+  color: #1363DF;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.pink {
+  color: #EE81B3;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.brown {
+  color: #61481C;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.black {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.imgArm {
+  margin: 8px;
+}
+
+
+
+@media all and (max-width: 1200px) {
+  .product-card {
+    max-width: 1000px;
+    }
+
+    .manImg{
+      width: 300px ;
+      height: 300px;
+    }
+
+}
+
+
+
+@media all and (max-width: 992px) {
+  .product-card {
+    max-width: 750px;
+  }
+  .imgColor {
+    width: 500px;
+    height: 500px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media all and (max-width: 820px) {
+ 
+  .product-card {
+    max-width: 770px;
+    }
+
+    .imgColor {
+      width: 480px;
+      height: 480px;
+    }
+
+    .manImg{
+      width: 230px ;
+      height: 230px;
+    }
+
+    .imgArm {
+      width: 700px;
+      height: 450px;
+    }
+
+}
+
+
+@media all and (max-width: 767px) {
+  .product-card{
+    max-width: none;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .product-card {
+
+  flex-basis: 400px;
+  
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .cont {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+
+  .manImg{
+    width: 400px ;
+    height: 400px;
+  }
+
+  h2{
+    display: flex;
+    align-self: center;
+  }
+}
+
+@media all and (max-width: 412px) {
+  .product-card {
+
+  flex-basis: 370px;
+  
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .cont {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .manImg{
+    width: 370px ;
+    height: 370px;
+  }
+
+  .imgColor {
+    width: 370px;
+    height: 370px;
+  }
+
+  .imgArm {
+    width: 400px;
+    height: 260px;
+  }
+
+  .imgHistory {
+    width: 400px;
+  }
+
+  h2{
+    display: flex;
+    align-self: center;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h3, h4 {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .manImg{
+    width: 370px ;
+    height: 370px;
+  }
+
+  .imgColor {
+    width: 320px;
+    height: 320px;
+  }
+
+  .imgHistory {
+    width: 360px;
+  }
+
+  .imgArm {
+    width: 370px;
+    height: 240px;
+  }
+}
+
+
+@media all and (max-width: 360px) {
+  .product-card {
+
+  flex-basis: 300px;
+  
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .cont {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .manImg{
+    width: 340px ;
+    height: 340px;
+  }
+
+  .imgColor {
+    width: 320px;
+    height: 320px;
+  }
+
+  .imgHistory {
+    width: 350px;
+  }
+
+  .imgArm {
+    width: 350px;
+    height: 230px;
+  }
+
+  h2{
+    display: flex;
+    align-self: center;
+  }
+
+  h3, h4 {
+    font-size: 18px;
   }
 }
